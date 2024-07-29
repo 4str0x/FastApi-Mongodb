@@ -10,6 +10,8 @@ async def root():
 
 app.include_router(router, prefix="")
 
+
+# Codigo de inicialização do servidor "uvicorn" ao executar o arquivo main.py
 if __name__ == '__main__':
     import uvicorn
     

@@ -1,6 +1,5 @@
 from pydantic import BaseModel
 
-
 class insert_one(BaseModel):
     collection: str
     payload: dict

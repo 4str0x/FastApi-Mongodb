@@ -1,5 +1,3 @@
-
-
 from fastapi import APIRouter
 
 from routes.ActionDb import insert_in_db as insert_in_db
@@ -10,7 +8,7 @@ from routes.ActionDb import find_all as find_all
 
 router = APIRouter()
 
-
+# Roteamentos das funções da database
 router.include_router(insert_in_db.router, prefix='/db/insert')
 router.include_router(find_db.router, prefix='/db/find')
 router.include_router(deleted.router, prefix='/db/deleted')
