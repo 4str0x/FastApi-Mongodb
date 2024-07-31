@@ -12,7 +12,7 @@ router = APIRouter()
 load_dotenv()  # Carrega as variáveis de ambiente do arquivo .env
 
 # Carregando as mensagens de retorno do arquivo .env
-ITEM_NOT_FOUND = os.getenv("ITEM_NOT_FOUND")
+ID_NOT_FOUND = os.getenv("ID_NOT_FOUND")
 SUCCESS_REGISTER_MSG = os.getenv("SUCCESS_REGISTER_MSG")
 
 
@@ -55,7 +55,7 @@ async def find(data: find_one):
     return JSONResponse(
             content={
                 "status": "ERROR",
-                "response": {"code": ITEM_NOT_FOUND},
+                "response": {"code": ID_NOT_FOUND},
             },
             status_code=404,
         )

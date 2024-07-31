@@ -6,9 +6,9 @@ from bson import ObjectId
 load_dotenv()
 
 # Chave de conexão do MongoDB mais a database da aplicação
-MONGODB_CONNECTION_STRING = "mongodb+srv://astro:astro@cluster0.gkzj5ua.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_CONNECTION_STRING = ""
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGODB_CONNECTION_STRING)
-DB = client["M_key"]
+DB = client[""] # passe a database do seu projeto aqui
 
 # Carregando as mensagens de retorno do arquivo .env
 ALREADY_REGISTERED_MSG = os.getenv("ALREADY_REGISTERED_MSG")
