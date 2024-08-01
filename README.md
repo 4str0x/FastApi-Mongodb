@@ -14,7 +14,7 @@ $ pip install -r requirements.txt
     --> 100%
 ```
 
-> Após a instalação, é necessário configurar as [variáveis de conexão do banco de dados](https://github.com/4str0x/FastApi-Mongodb/blob/9c61b5be48b195960652109cec0cbef4a7156ad6/database/Database.py#L9).
+> Após a instalação, é necessário configurar as [variáveis de conexão do banco de dados](https://github.com/4str0x/FastApi-Mongodb/blob/main/src%2Fdatabase%2FDatabase.py#L9).
 
 ## Rodando
 
